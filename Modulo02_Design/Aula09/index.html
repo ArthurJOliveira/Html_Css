@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            background-color: rgba(255, 166, 0, 0.336);
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            margin: 10px 10px 20px 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border-radius: 25px 0px;
+        }
+
+        footer{
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+
+        #subtitulo{
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        section{
+            background-color: rgb(184, 196, 209);
+            border-radius: 25px 0px;
+        }
+
+        section>aside{
+            text-align: right;
+            margin: 15px;
+        }
+
+        nav{
+            background-color:rgb(184, 196, 209);
+            margin: 15px;
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px black;
+        }
+
+        nav>a{
+            text-decoration: none;
+            padding-right:25px;
+            font-weight: bolder;
+        }
+
+        nav>a:hover{
+            color: red
+        }
+
+        article{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>  
+        <section id="subtitulo">
+            <p>Interface inicial de um site</p>
+        </section>
+        <section>
+            <article>
+                <h3>O que é isso?</h3>
+                <p>Estamos vendo uma estrutura inicial de um site, usando grouping tags, tags usadas para dividir de forma mais organizada e semantica as div's. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore tenetur nulla iusto quidem molestiae dolor pariatur quasi, unde fugiat quas repellat dolore ullam illum non ex quod odio maxime!</p>
+            </article>
+            <aside>
+                <p>Feito pelo Arnaldo</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo dev lendário.</p>
+    </footer>
+</body>
+</html>

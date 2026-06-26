@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Aumente ou diminua a pagina</p>
+    <picture>
+        <source media="(max-width: 500px )" srcset="imagens\images.jpg" type="image/jpg">
+
+         <source media="(max-width:950px)" srcset="imagens\lucas-paqueta-chora-ao-receber-cartao-amarelo-contra-o-tottenham-pelo-ingles-1746373855103_v2_450x450.jpg" type="image/jpg">
+
+        <img src="imagens/2026-FLAMENGO-LUCAS-PAQUETA-SELECAO-BRASILEIRA-COPA-DO-MUNDO.webp" alt="molecote">
+    </picture><hr>
+
+    <h1>Reproduzir audio</h1>
+    <p>Para adicionar um audio ao site, a forma mais basica é usando a tag "Audio" junto a tag "Controls autoplay" para poder pausar e continuar a musica</p>
+    <audio src="audio/Toma Paquetá.mp3" controls></audio>
+    <p>Obs: É importante lembrar que nem todo navegador é compativel com o arquivo desejado, por isso é inteligente adicionar mais de um tipo de arquivo, tanto para audios e videos.</p><hr>
+
+    <h1>Acicionando videos do youtube</h1>
+    <p>Para isso, basta apertar em comprtilhar em algum video do youtube e buscar seu codigo e colar no site.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gf_fc2SBolQ?si=cMvbqvrL9c1Lvasa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen target="_blank" rel="external"></iframe>
+    <p>Obs: Trocar o download do video para usar o codigo do youtube, é inteligente pois diminui o trafego de banda de internet, o que sai mais barato em caso de hospedagem do site </p>
+
+    <a href="https://youtu.be/gf_fc2SBolQ?si=CfPmDc4WHzhx7jW2" target="_blank" rel="external">
+        <img src="imagens/2026-FLAMENGO-LUCAS-PAQUETA-SELECAO-BRASILEIRA-COPA-DO-MUNDO.webp" alt="toma paqueta" >
+    </a>
+</body>
+</html>

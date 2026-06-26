@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: gray;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        div:hover{
+            background-color: red;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+
+        #d2:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+<body> 
+    <p>Ache o OVO</p>
+    <div id="d1">01</div>
+    <div id="d2">02
+        <p>🥚</p>
+    </div>
+    <div id="d3">03</div>
+    <div id="d3">03</div>
+    <div id="d3">03</div>
+    <div id="d3">03</div>
+</body>
+</html>
