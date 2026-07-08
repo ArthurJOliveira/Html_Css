@@ -19,6 +19,7 @@ body{
     text-align: center;
     font-size: 10vw;
     margin: 0px;
+    font-variant: small-caps;
 }
 
 #titulo>p{
@@ -33,36 +34,81 @@ body{
     font-weight: 400;
 }
 
+#titulo>p>a:hover{
+    color: gray;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
 main{
-    margin: 90px 0px 20px 70px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em ;
     text-align: left;
     font-family: "Sriracha", cursive;
-    font-size: 48px;
+    font-size: 3.5vw;
 }
 
-section{
-    margin-bottom: 200px;
+.normal{
+    padding-left: 70px;
+    padding-bottom:1em;
 }
+
 
 .foto1{
-    background-image: url(imagens/background001.jpg);
     background-repeat: no-repeat;
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.450);
+    background-attachment: fixed;
+}
+
+.foto1>p{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: inline-block;
 }
 
 .foto2{
-    background-image: url(imagens/background002.jpg);
     background-repeat: no-repeat;
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.450);
+    background-attachment: fixed;
+}
+
+.foto2>p{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 50px;
+    color: white;
+    display: inline-block;
 }
 
 footer{
     background-color: black;
     height: 30px;
+    padding:5px;
     color: white;
     text-align: center;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-size: 1.5vw;
 }
 
 footer>p>a{
     color: white;
     text-decoration: none;
+    font-weight: 500;
+}
+
+footer>p>a:hover{
+    color: gray;
+    text-decoration: underline;
     font-weight: 500;
 }
