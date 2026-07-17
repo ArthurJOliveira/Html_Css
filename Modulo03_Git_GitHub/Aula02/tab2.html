@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        caption{
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: #cfcece;
+        }
+
+        thead, tfoot{
+            background-color: #615959;
+            text-align: center;
+            color: white;
+        }
+
+        tbody{
+            text-align: left;
+        }
+
+        tbody  > tr:nth-child(2n){
+            background-color: #cfcece;
+        }
+
+        .num{
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <table>
+        <caption>População dos estados brasileiros </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">Populaçao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="num">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+            </tr>
+            <tr>
+                <td> Ceará</td>
+                <td class="num">9 268 836</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 711 196</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total:</th>
+            <td class="num">159 095 765</td>
+        </tfoot>
+    </table>
+</body>
+</html>
