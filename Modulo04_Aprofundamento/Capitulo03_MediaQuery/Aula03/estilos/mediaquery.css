@@ -1,0 +1,59 @@
+/*Outras Midias*/
+
+@media print{
+    h1{
+        text-shadow: none;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #cel{display: none;}
+    #tab{display: none;}
+    #imp{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #cel{display: none;}
+    #tab{display: block;}
+    #imp{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #cel{display: none;}
+    #tab{display: none;}
+    #imp{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #cel{display: none;}
+    #tab{display: none;}
+    #imp{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}

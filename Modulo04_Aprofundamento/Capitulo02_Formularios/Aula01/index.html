@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario simples</h1>
+    <form action="cadastro.js" method="get" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" required placeholder="Nome do usuario">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p><hr>
+    </form>
+
+    <form action="cadastro.js" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required>
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="4" size="15" placeholder="minimo 4 caracteres">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p> <hr>
+    </form> 
+    
+    <fieldset>
+        <legend>Dados do Aluno</legend>
+        <form action="cadastro.js">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="imedia">Media:</label>
+                <input type="number" name="Media" id="imedia" step="0.5" placeholder="0 a 10" size="5" min="0" max="10">
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo:</label>
+                <input type="month" name="mes" id="imes" placeholder="Mes/Ano" size="10">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset> <hr>
+
+    <fieldset>
+        <legend>Gênero</legend>
+        <p>
+            <form action="cadastro.js">
+                <input type="radio" name="sexo" id="imasc" value="M">
+                <label for="imasc">Masculino</label> <br>
+                <input type="radio" name="sexo" id="ifem" value="F">
+                <label for="ifem">Feminino</label> <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </p>
+    </fieldset> <hr>
+
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <form action="cadastro.js">
+            <input type="checkbox" name="ufc" id="iufc"><label for="iufc">UFC</label> <br>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label> <br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label> <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset> <hr>
+
+    <form action="cadastro.js">
+        <label for="icor">Cor:</label>
+        <input type="color" name="coe" id="icor"> <br>
+        <label for="isas">Nivel de satisfaçao</label> 
+        <input type="range" name="sas" id="isas" min="1" max="10" value="5"> <br>
+        <input type="submit" value="Enviar">
+    </form> <hr>
+
+    <form action="">
+        <label for="iest">Estado:</label>
+        <select name="Estado" id="iest">
+            <optgroup label="Sudeste">
+                <option value="SP">São paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+
+            <optgroup label="Norte">
+                <option value="RR">Roraima</option>
+                <option value="RD">Rondonia</option>
+                <option value="AM">Amazonas</option>
+                <option value="AC">Acre</option>
+            </optgroup>
+        </select> <br>
+    </form>
+    
+    <form action="">
+        <label for="iest">Estado:</label>
+        <input type="text" name="est" id="iest" list="listest"><br>
+        <datalist id="listest">
+            <option value="SP">São paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </datalist>
+        <input type="submit" value="Enviar">
+    </form> <hr>
+</body>
+</html>
