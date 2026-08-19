@@ -1,0 +1,96 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #490049;
+        height: 98vh;
+        width: 98vw;
+        position: relative;
+    }
+
+    #prin{
+        background-size: cover;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 35%;
+    }
+
+    main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: white;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+        width: 250px;
+        height: 500px;
+        transition: width .3s, height .3s ;
+        transition-timing-function: ease;
+        transform: translate(-50%,-50%);
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    p{
+        padding: 10px;
+    }
+
+    #ema, #sen{
+        display: block;
+        float: right;
+        height: 100%;
+        text-indent: 5px ;
+        border: 3px solid #490049;
+        border-radius: 8px;
+        background-color: #06f06fd0;
+        color: black;
+    }
+
+    #ema:focus-within , #sen:focus-within{
+        background-color: white;
+    }
+
+    #email, #senha {
+        background-color: #490049;
+        height: 40px;
+        width: 225px;
+        border-radius: 8px ;
+        margin: 0px 12px 5px 15px;
+    }
+
+    #user, #key{
+        height: 35px;
+        width: 35px;
+        margin-left: 4px;
+    }
+
+    button{
+        width: 90%;
+        margin: 0px 12px 5px 15px;
+        padding: 5px;
+        border-radius: 8px;
+        background-color: white;
+        color: #008000;
+    }
+
+    button:hover{
+        background-color: #004100;
+        color: white;
+        cursor: poin;
+    }
+
+    #entrar{
+        background-color: #04a14bd0;
+        color: white;
+    }
+
+    #entrar:hover {
+        background-color: #013d1cd0;
+    }

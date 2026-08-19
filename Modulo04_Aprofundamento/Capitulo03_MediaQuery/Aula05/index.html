@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Estilos/mobile.css">
+    <link rel="stylesheet" href="Estilos/medias.css">
+</head>
+<body>
+    <main>
+        <img src="Imagens/image.png" alt="" id="prin">
+        <header>
+            <h2>Login</h2>
+            <p>
+               Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. 
+            </p>
+        </header>
+        <form action="cadastro.js" method="post" autocomplete="on">
+            <article>
+                <article id="email">
+                    <img src="Imagens/user.png" alt="" id="user">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="ema" size="23" placeholder="Email" required autocomplete="email">
+                </article>
+            
+                <article id="senha">
+                    <img src="Imagens/key.png" alt="" id="key">
+                    <label for="senha"></label>
+                    <input type="password" name="senha" id="sen" size="23" placeholder="Senha" required>
+                </article>
+                <article>
+                    <button type="submit" id="entrar">Entrar</button> <br>
+                    <button type="reset" id="">Esqueci a senha</button>
+                </article>
+            </article>
+        </form>
+    </main>
+</body>
+</html>
