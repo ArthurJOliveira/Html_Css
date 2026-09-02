@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2{
+    padding-bottom: 20px;
+}
+
+div{
+    padding: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+section{
+    background-color: lightgray;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.788);
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.text{
+    padding: 20px;
+    flex: 1 1 600px;
+}
+
+img{
+    height: 400px;
+    width: 595px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+
+iframe{
+    height: 400px;
+    width: 595px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+
+#TM{
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+#MT{
+    display: flex;
+    flex-flow: row wrap;
+}
