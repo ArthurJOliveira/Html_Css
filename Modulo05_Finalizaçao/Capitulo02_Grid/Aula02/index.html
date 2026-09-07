@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        #conteiner{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template: 2fr 1fr 4fr 1fr / 3fr 1fr;
+        }
+        
+        .item{
+            text-align: center;
+            font-size: 1.5em;
+            background-color: rgb(14, 173, 120);
+            border: 1px solid black;
+        }
+
+        #topo{
+            background-color: beige;
+            grid-area: 1/1/2/3;
+        }
+
+        #menu{
+            background-color: red;
+            grid-area: 2/1/3/3;
+        }
+
+        #principal{
+            background-color: green;
+            grid-area: 3/1/4/2;
+        }
+
+        #secundario{
+            background-color: blue;
+            grid-area: 3/2/4/3;
+        }
+
+        #rodape{
+            background-color: yellow;
+            grid-area: 4/1/5/3;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item" id="topo">TOPO</div>
+        <div class="item" id="menu">MENU</div>
+        <div class="item" id="principal">PRINCIPAL</div>
+        <div class="item" id="secundario">SECUNDARIO</div>
+        <div class="item" id="rodape">FOOTER</div>
+    </div>
+</body>
+</html>
